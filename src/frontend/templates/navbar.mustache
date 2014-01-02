@@ -1,0 +1,35 @@
+    <!-- Static navbar -->
+    {{# .}}
+    <div role="navigation" class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">{{project}}</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            {{# dropdown}}
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">{{title}}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                {{# menu}}
+                <li class="{{class}}"><a href="{{href}}">{{option}}</a></li>
+                {{/ menu}}
+              </ul>
+            </li>
+            {{/ dropdown}}
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            {{# dropdown_right}}
+            <li class="{{class}}"><a href="{{href}}">{{option}}</a></li>
+            {{/ dropdown_right}}
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    {{/ .}}

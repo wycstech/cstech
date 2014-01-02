@@ -1,0 +1,7 @@
+{
+    "require": {
+        "mustache/mustache": "~2.1",
+        "twbs/bootstrap": "*",
+        "monolog/monolog": "1.0.*"
+    }
+}
