@@ -12,6 +12,10 @@ $templates = array(
             'data' => 'navbar'
         ),
         array(
+            'template' => 'defaultContenet',
+            'data' => 'defaultContenet',
+        ),
+        array(
             'template' => 'tail',
             'data' => 'main_tail'
         ),
