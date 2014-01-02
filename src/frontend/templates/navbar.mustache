@@ -18,7 +18,7 @@
               <a data-toggle="dropdown" class="dropdown-toggle" href="#">{{title}}<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 {{# menu}}
-                <li class="{{class}}"><a href="{{href}}">{{option}}</a></li>
+                <li class="{{class}}">{{^ class}}<a href="{{href}}">{{/ class}}{{option}}{{^ class}}</a>{{/ class}}</li>
                 {{/ menu}}
               </ul>
             </li>

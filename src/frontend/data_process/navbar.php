@@ -11,17 +11,17 @@
                         'class' => '',
                     ),
                     array(
-                        'option' => 'option2',
+                        'option' => 'divider',
                         'href' => '#',
                         'class' => 'divider',
                     ),
                     array(
-                        'option' => 'option3',
+                        'option' => 'subtitle',
                         'href' => '#',
                         'class' => 'dropdown-header',
                     ),
                     array(
-                        'option' => 'option4',
+                        'option' => 'option2',
                         'href' => '#',
                         'class' => '',
                     ),
@@ -36,17 +36,17 @@
                         'class' => '',
                     ),
                     array(
-                        'option' => 'option2',
+                        'option' => 'divider',
                         'href' => '#',
                         'class' => 'divider',
                     ),
                     array(
-                        'option' => 'option3',
+                        'option' => 'subtitle',
                         'href' => '#',
                         'class' => 'dropdown-header',
                     ),
                     array(
-                        'option' => 'option4',
+                        'option' => 'option2',
                         'href' => '#',
                         'class' => '',
                     ),
@@ -61,17 +61,17 @@
                         'class' => '',
                     ),
                     array(
-                        'option' => 'option2',
+                        'option' => 'divider',
                         'href' => '#',
                         'class' => 'divider',
                     ),
                     array(
-                        'option' => 'option3',
+                        'option' => 'subtitle',
                         'href' => '#',
                         'class' => 'dropdown-header',
                     ),
                     array(
-                        'option' => 'option4',
+                        'option' => 'option2',
                         'href' => '#',
                         'class' => '',
                     ),
