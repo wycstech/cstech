@@ -1,0 +1,19 @@
+   <form role="form" class="form-signin" action="{{action}}">
+    {{# .}}  
+        <h2 class="form-signin-heading">{{headLine}}</h2>
+        {{# inputs}}
+        {{# label}}
+        <label class="{{labelClass}}">
+        <input type="{{type}}" {{# autoFocus}}autofocus=""{{/ autoFocus}} placeholder="{{placeholder}}" class="{{inputClass}}" {{# required}}required{{/ required}}>{{name}}
+        </label>
+        {{/ label}}
+        {{^ label}}
+        <input type="{{type}}" {{# autoFocus}}autofocus=""{{/ autoFocus}} placeholder="{{placeholder}}" class="{{inputClass}}" {{# required}}required{{/ required}}>{{name}}
+        {{/ label}}
+        {{/ inputs}}
+        {{# button}}
+        <button type="{{type}}" class="btn btn-lg btn-primary btn-block">{{name}}</button>
+        {{/ button}}
+    {{/ .}}
+  </form>
+

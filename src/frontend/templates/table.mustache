@@ -1,0 +1,26 @@
+{{# .}}
+<div class="page-header">
+<h1>{{tableName}}</h1>
+</div>
+{{# table}}
+<table class="table table-bordered">
+<thead>
+    <tr>
+    <td>#</td>
+    {{# tableHead}}
+    <td>{{.}}</td>
+    {{/ tableHead}}
+    </tr>
+</thead>
+<tboay>
+    {{# bodyRow}}
+    <tr>
+        {{# tableBody}}
+        <td colspan="{{colspan}}">{{bodyColumn}}</td>
+        {{/ tableBody}}
+    </tr>
+    {{/ bodyRow}}
+</tbody>
+</table>
+{{/ table}}
+{{/ .}}

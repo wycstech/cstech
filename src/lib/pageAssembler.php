@@ -20,11 +20,17 @@ class pageAssembler {
                 foreach ($temp as $partials) {
                     $tpl = $mustache->loadPartial($partials['template']);
                     include_once(DATA_PATH.$partials['data'].'.php');
-                    echo $tpl->render($data);
+                    $html = $tpl->render($data);
+                    echo $html; 
+                    error_log($partials['template']);
+                    error_log($html);
                 }
             } else {
                 $tpl = $mustache->loadTemplate($temp['template']);
-                echo $tpl->render();
+                $html = $tpl->render();
+                echo $html; 
+                error_log($temp['template']);
+                error_log($html);
             }
         }
     }
