@@ -6,18 +6,7 @@ define('STATIC_PATH', '/src/static/');
 class pageAssembler {
 
     private $mustache;
-    private $templates = array(
-        'main' => array(
-            'template'=>'index',
-            'data'=>'',
-        ),
-        'partials' => array(
-            array(
-                'template'=>'head',
-                'data'=>'signin_head',
-            ),
-        ),
-    );
+    private $templates;
 
     private function generateContent($templates) {
         $mustache = new Mustache_Engine(array(
