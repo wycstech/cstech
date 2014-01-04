@@ -22,15 +22,15 @@ class pageAssembler {
                     include_once(DATA_PATH.$partials['data'].'.php');
                     $html = $tpl->render($data);
                     echo $html; 
-                    error_log($partials['template']);
-                    error_log($html);
+                    //error_log($partials['template']);
+                    //error_log($html);
                 }
             } else {
                 $tpl = $mustache->loadTemplate($temp['template']);
                 $html = $tpl->render();
                 echo $html; 
-                error_log($temp['template']);
-                error_log($html);
+                //error_log($temp['template']);
+                //error_log($html);
             }
         }
     }

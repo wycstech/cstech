@@ -12,15 +12,15 @@
           <a href="#" class="navbar-brand">{{project}}</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul id="navbar" class="nav navbar-nav">
             {{# dropdown}}
             <li id="{{dropdownId}}" class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle" href="#">{{title}}<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 {{# menu}}
-                <li id="{{optionId}}" class="{{class}}">
+                <li id="" class="{{class}}">
                 {{# class}}{{option}}{{/ class}}
-                {{^ class}}<a href="{{href}}">{{option}}</a>{{/ class}}
+                {{^ class}}<a id="{{optionId}}" href="{{href}}">{{option}}</a>{{/ class}}
                 </li>
                 {{/ menu}}
               </ul>

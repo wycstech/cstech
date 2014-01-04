@@ -1,9 +1,8 @@
-CSTECH.sendRequest = function (partialTemplate, partialData) {
+CSTECH.sendRequest = function (id) {
     $.ajax({
       url: "/src/frontend/ajax/getTable.php",
       data: {
-        partialTemplate: partialTemplate,
-        partialData: partialData
+        id: id,
       },
       success: function(data) {
         $("#main").html(data);
