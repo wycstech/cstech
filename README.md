@@ -3,6 +3,7 @@ cstech
 
 require:
 composer
+http://getcomposer.org/
 
 template:
 mustache
